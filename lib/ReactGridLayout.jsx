@@ -97,6 +97,7 @@ export default class ReactGridLayout extends React.Component<Props, State> {
     allowOverlap: false,
     isDroppable: false,
     useCSSTransforms: true,
+    usePercentages: false,
     transformScale: 1,
     verticalCompact: true,
     compactType: "vertical",
@@ -500,6 +501,7 @@ export default class ReactGridLayout extends React.Component<Props, State> {
       rowHeight,
       maxRows,
       useCSSTransforms,
+      usePercentages,
       transformScale
     } = this.props;
 
@@ -522,6 +524,7 @@ export default class ReactGridLayout extends React.Component<Props, State> {
         isResizable={false}
         isBounded={false}
         useCSSTransforms={useCSSTransforms}
+        usePercentages={usePercentages}
         transformScale={transformScale}
       >
         <div />
